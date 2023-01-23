@@ -1,0 +1,10 @@
+name: Cmanutencao
+version: '${project.version}'
+main: com.coopas.cmanutencao.Main
+api-version: 1.19
+authors: [ Coopas ]
+description: Plugin de Manutenção com MOTD
+website: https://github.com/coopas
+commands:
+  manutencao:
+    description: Comando para ativar ou desativar a manutencao.

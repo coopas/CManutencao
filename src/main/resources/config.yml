@@ -1,0 +1,39 @@
+#https://github.com/coopas
+#Muito obrigado por usar meu plugin :)
+
+Motd:
+  Manutencao:
+    1: '         &c&l!&c&lServer em Manutenção!'
+    2: '                &cVolte Depois'
+  Aberto:
+    1: '              &a&lSERVER ABERTO'
+    2: '         &6&lACESSE: &a&lSITE.COM'
+
+Config:
+  #O maximo de players quando o server estiver aberto
+  MaxDePlayers: 2023
+  #Se deseja Kickar todos os players ou não ao abrir manutenção [ 0 = False | 1 = True ]
+  Kick: 1
+  #Permissão para usar o /manutencao
+  Perm: p.manutencao
+
+Mensagens:
+  Erro1: ' &c- Por favor, utilize "/Manutencao [ ON / OFF ]"'
+  Erro2: ' &c- Você não possui permissão o suficiente para usar esse comando.'
+  Erro3: ' &c- A manutenção ja está ativa.'
+  Erro4: ' &c- A manutenção ja está desativada!.'
+  MOn: ' &a+  A manutenção foi ativada!'
+  MOff: ' &c-  A manutenção foi desligada!'
+
+  #Não adicionar nem diminuir linhas, caso queria uma linha a menos apenas deixe a vazia!
+  Kick:
+    1: '&c&lVocê foi Kickado do servidor'
+    2: '     &cUma manutenção foi iniciada'
+    3: ' '
+    4: '         &6&l!&6Confira discord.gg/123 para Atualizações!'
+
+
+
+
+
+
