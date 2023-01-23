@@ -1,2 +1,5 @@
+---
 # CManutencao
- Plugin de Manutenção com MOTD!
+
+ Plugin de Manutenção completo!
+ ---
