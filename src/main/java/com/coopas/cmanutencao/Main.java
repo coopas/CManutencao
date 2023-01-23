@@ -1,6 +1,7 @@
 package com.coopas.cmanutencao;
 
 import com.coopas.cmanutencao.Comandos.ManutencaoC;
+import com.coopas.cmanutencao.Eventos.AoEntrarE;
 import com.coopas.cmanutencao.Eventos.MotdE;
 import com.coopas.cmanutencao.Utils.Config;
 import org.bukkit.Bukkit;
@@ -42,7 +43,9 @@ public final class Main extends JavaPlugin {
 
 
     public void eventos() {
+
         Bukkit.getPluginManager().registerEvents(new MotdE(), this);
+        Bukkit.getPluginManager().registerEvents(new AoEntrarE(), this);
     }
 
     public void comandos() {

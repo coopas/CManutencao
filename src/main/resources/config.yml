@@ -1,6 +1,14 @@
 #https://github.com/coopas
 #Muito obrigado por usar meu plugin :)
 
+#O Plugin funciona a base de Whitelist
+
+#Para permitir que um staff entre na manutenção
+#Use /Whitelist add [NICK]
+
+#Caso queira ver os staffs registrados
+#Use /Whitelist list
+
 Motd:
   Manutencao:
     1: '         &c&l!&c&lServer em Manutenção!'
@@ -14,6 +22,7 @@ Config:
   MaxDePlayers: 2023
   #Se deseja Kickar todos os players ou não ao abrir manutenção [ 0 = False | 1 = True ]
   Kick: 1
+  DelayKick: 10
   #Permissão para usar o /manutencao
   Perm: p.manutencao
 
@@ -30,7 +39,9 @@ Mensagens:
     1: '&c&lVocê foi Kickado do servidor'
     2: '     &cUma manutenção foi iniciada'
     3: ' '
-    4: '         &6&l!&6Confira discord.gg/123 para Atualizações!'
+    4: '          &6&l!&6Confira discord.gg/123 para Atualizações'
+    Aviso: '&4&l! &r&cO SERVIDOR ENTRARÁ EM MANUTENÇÃO EM {delay}s'
+    Msg: '&4&l!&r&cVocê não faz parte da staff!'
 
 
 

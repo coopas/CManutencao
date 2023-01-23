@@ -7,6 +7,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import static com.coopas.cmanutencao.Main.plugin;
+
 public class ManutencaoC implements CommandExecutor {
 
     @Override
@@ -25,14 +27,26 @@ public class ManutencaoC implements CommandExecutor {
                             } else {
                                 Bukkit.setWhitelist(true);
                                 sender.sendMessage(Main.config.getConfig().getString("Mensagens.MOn").replace("&", " §"));
-                                
+
+
 
                                 if (Main.config.getConfig().getInt("Config.Kick") == 1) {
-                                    for (Player p : Bukkit.getOnlinePlayers())
-                                        p.kickPlayer(Main.config.getConfig().getString("Mensagens.Kick.1").replace("&", " §") + "\n" +
-                                                Main.config.getConfig().getString("Mensagens.Kick.2").replace("&", " §") + "\n" +
-                                                Main.config.getConfig().getString("Mensagens.Kick.3").replace("&", " §") + "\n" +
-                                                Main.config.getConfig().getString("Mensagens.Kick.4").replace("&", " §"));
+                                    Bukkit.broadcastMessage(" ");
+                                    Bukkit.broadcastMessage(Main.config.getConfig().getString("Mensagens.Kick.Aviso")
+                                            .replace("&", " §")
+                                            .replace("{delay}", Integer.toString(Main.config.getConfig().getInt("Config.DelayKick"))));
+                                    Bukkit.broadcastMessage(" ");
+                                            Bukkit.getScheduler().runTaskLater(plugin, () -> {
+                                            for (Player p : Bukkit.getOnlinePlayers()) {
+                                                if (!p.isWhitelisted()) {
+                                                    p.kickPlayer(Main.config.getConfig().getString("Mensagens.Kick.1").replace("&", " §") + "\n" +
+                                                            Main.config.getConfig().getString("Mensagens.Kick.2").replace("&", " §") + "\n" +
+                                                            Main.config.getConfig().getString("Mensagens.Kick.3").replace("&", " §") + "\n" +
+                                                            Main.config.getConfig().getString("Mensagens.Kick.4").replace("&", " §"));
+                                                }
+                                            }
+                                            }, Main.config.getConfig().getInt("Config.DelayKick")*20L);
+
                                 }
                             }
 
