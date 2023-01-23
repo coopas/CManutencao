@@ -25,8 +25,7 @@ public class ManutencaoC implements CommandExecutor {
                             } else {
                                 Bukkit.setWhitelist(true);
                                 sender.sendMessage(Main.config.getConfig().getString("Mensagens.MOn").replace("&", " §"));
-
-            
+                                
 
                                 if (Main.config.getConfig().getInt("Config.Kick") == 1) {
                                     for (Player p : Bukkit.getOnlinePlayers())
