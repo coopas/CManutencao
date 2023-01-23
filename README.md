@@ -7,6 +7,7 @@
  Colaboração de Karboxx
  
  Download:
+ https://github.com/coopas/CManutencao/releases/download/latest/CManutencao.jar
  -
  
  ---
