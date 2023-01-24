@@ -11,5 +11,3 @@
  ## [REVIEW DO PLUGIN](https://youtu.be/ZpgjJCZbfUc)
  
  ---
- 
- 
