@@ -1,7 +1,7 @@
 # CManutencao
 - Plugin de Manutenção completo! 
- - Feito por: Cooopas 
- - Colaboração de Karboxx
+ - Feito por: Coopas 
+ - Colaboração de [Karboxx](https://github.com/KarboXXX)
  
  # [REVIEW DO PLUGIN](https://youtu.be/ZpgjJCZbfUc)
  
